@@ -1,0 +1,203 @@
+/*
+    
+Color Scheme:
+        Grey: #DDD
+        Blue: #6495ED
+        off-white: #f5f5f5
+
+    Fonts:
+        Arial, Helvetica, Helvetica Neue, sans-serif;
+*/
+
+/*General*/
+* {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: Arial, Helvetica, Helvetica Neue, sans-serif;
+}
+
+body {
+  font-family: Arial, Helvetica, Helvetica Neue, sans-serif;
+  margin: 0;
+  color: #ddd;
+  line-height: 1.5rem;
+  font-size: 1rem;
+}
+
+p {
+  line-height: 1rem;
+}
+
+/* ------------------FORM STYLING------------------- */
+form {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05);
+  background-color: #f5f5f5;
+  margin: 4rem auto;
+  padding: 3rem 1rem 1.5rem;
+  font-size: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  /* width: 100%; */
+  max-width: 50rem;
+  align-items: center;
+  border-radius: 4px;
+  border: solid 1px #ececec;
+  position: relative;
+}
+
+form h3 {
+  background: #fff;
+  position: absolute;
+  top: -1.5rem;
+  padding: 1rem 2rem;
+  border: solid 1px #ececec;
+  color: #000;
+  margin: 0;
+  left: 2rem;
+  font-size: 2rem;
+  width: auto;
+}
+
+.form-group {
+  width: 50%;
+  padding: 1rem;
+}
+
+.form-group:last-of-type {
+  width: 100%;
+}
+
+label {
+  color: #000;
+  /* font-weight: bold; */
+  display: block;
+  /* font-size: 0.9rem; */
+  margin-bottom: 10px;
+}
+
+form input,
+form textarea {
+  border: none;
+  /* font-size: 0.9rem; */
+  border: solid 1px #ececec;
+  height: 42px;
+  border-radius: 4px;
+  padding: 2px 12px;
+  width: 100%;
+}
+
+form textarea {
+  height: 120px;
+  padding-top: 10px;
+}
+
+form input:focus,
+form textarea:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+::placeholder {
+  color: #bebebe;
+  font-family: "Fira Sans", sans-serif;
+  padding-left: 0.3rem;
+  font-size: 1.5rem;
+}
+
+.button {
+  font-size: 1.5rem;
+  border: none;
+  margin: 0.5rem 1rem 1rem;
+  padding: 1rem 1rem;
+  background-color: #6495ed;
+  color: #f5f5f5;
+  width: auto;
+  padding: 0.5rem 2rem 0.5rem 2rem;
+  text-align: center;
+  display: inline-block;
+  border-radius: 4px;
+  line-height: 1;
+  height: auto;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #000;
+  color: white;
+}
+
+.error-section {
+  margin: 4rem auto;
+  padding: 0rem 1rem 1.5rem;
+  font-size: 1rem;
+  color: red;
+  width: 100%;
+  max-width: 50rem;
+  align-items: center;
+}
+
+.feedback-section {
+  margin: 4rem auto;
+  padding: 0rem 1rem 1.5rem;
+  font-size: 1rem;
+  width: 90%;
+  max-width: 50rem;
+  align-items: center;
+}
+
+@media screen and (max-width: 25rem) {
+  form {
+    width: 90%;
+  }
+
+  form h3 {
+    font-size: 1rem;
+  }
+
+  body {
+    line-height: 1.5rem;
+    font-size: 1rem;
+  }
+
+  .form-group {
+    width: 100%;
+  }
+
+  ::placeholder {
+    font-size: 1rem;
+  }
+
+  .button {
+    font-size: 1rem;
+    width: 100%;
+  }
+}
+
+@media screen and (min-device-width: 25rem) and (max-device-width: 40rem) {
+  body {
+    font-size: 1rem;
+  }
+  form {
+    width: 90%;
+  }
+
+  .form-group {
+    width: 50%;
+  }
+
+  ::placeholder {
+    font-size: 1rem;
+  }
+
+  .button {
+    font-size: 1rem;
+    width: auto;
+    padding: 0.5rem 2rem 0.5rem 2rem;
+  }
+}
