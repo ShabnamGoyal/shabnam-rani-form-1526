@@ -60,7 +60,7 @@ form h3 {
   color: #000;
   margin: 0;
   left: 2rem;
-  font-size: 2rem;
+   font-size: 2em;
   width: auto;
 }
 
@@ -154,10 +154,6 @@ form textarea:focus {
 @media screen and (max-width: 25rem) {
   form {
     width: 90%;
-  }
-
-  form h3 {
-    font-size: 1rem;
   }
 
   body {
